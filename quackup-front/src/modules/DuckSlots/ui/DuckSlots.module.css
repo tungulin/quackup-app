@@ -1,0 +1,82 @@
+.duckSlots {
+  margin-top: 20px;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 6px;
+  grid-row-gap: 6px;
+}
+
+.imgStyles {
+  max-width: 80px;
+  pointer-events: none;
+}
+
+.slotDuck {
+  min-width: calc(25% - 12px);
+  height: 130px;
+  border-radius: 10px;
+  border: 1px dashed #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slotDuck span {
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.slotLevel {
+  position: absolute;
+  right: 4px;
+  top: -6px;
+  font-size: 12px;
+  width: 6vh;
+  max-width: 35px;
+  max-height: 35px;
+  color: #fff;
+  height: 635px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: url('ui/icons/rating.svg') no-repeat center center;
+  background-size: cover;
+  overscroll-behavior: none;
+  z-index: 6;
+}
+
+.buttonTypeGradient {
+  font-size: 12px;
+  color: #fff;
+  min-height: 29px;
+  min-width: 55px;
+  transition: all 0.3s;
+  display: inline-flex;
+  padding: 3px 4px;
+  justify-content: center;
+  background: url('ui/icons/button-gradient.svg') 0 0/100% no-repeat;
+}
+
+.buttonSlotAuto {
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.textStyle {
+  text-align: center;
+}
+
+.deleteIconWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.deleteIcon {
+  position: fixed;
+  z-index: 1;
+  bottom: -5px;
+}

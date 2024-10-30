@@ -1,0 +1,39 @@
+.userInfo {
+  display: flex;
+  gap: 5px;
+}
+
+.blockImg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border: 3px solid #f0b77e;
+  width: 37px;
+  height: 37px;
+  border-radius: 10px;
+}
+
+.img {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.blockInfo {
+  display: flex;
+  flex-direction: column;
+  margin-top: -3px;
+  color: #303e11;
+}
+
+.mute {
+  display: flex;
+  align-items: center;
+}
+
+.muteName {
+    margin-left: 5px;
+}

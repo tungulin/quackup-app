@@ -1,0 +1,17 @@
+{
+  "bottomNavigation": {
+    "shop": "Shop",
+    "ducks": "Ducks",
+    "fly": "Fly",
+    "generate": "Generate",
+    "league": "League"
+  },
+  "duckShop": {
+    "farmSec": "FARM/MIN",
+    "buy": "BUY"
+  },
+  "titlePage": {
+    "shop": "SHOP",
+    "ducks": "DUCKS"
+  }
+}

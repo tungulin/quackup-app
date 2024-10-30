@@ -1,0 +1,23 @@
+.header {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('ui/webp/page-content-header.webp') 0 0/100% 100% no-repeat;
+    font-size: 28px;
+    color: white;
+    position: relative;
+
+    .iconStyle {
+        position: absolute;
+        right: -20px;
+        top: -19px;
+        cursor: pointer;
+    }
+}
+
+.titleIcon {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}

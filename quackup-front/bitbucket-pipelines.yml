@@ -1,0 +1,55 @@
+image: node:16.20
+pipelines:
+    branches:
+        production:
+            - step:
+                  deployment: Production
+                  size: 2x
+                  name: Build and push
+                  services:
+                      - docker
+                  caches:
+                      - docker
+                      - node
+                  script:
+                      - apt-get update
+                      - apt-get install -y jq
+                      - declare -x VERSION=$(jq -r '.version' package.json)
+                      - echo REACT_APP_BASE_URL="${REACT_APP_BASE_URL}" >> .env
+                      - echo REACT_APP_ENV="${REACT_APP_ENV}" >> .env
+                      - echo REACT_APP_GOOGLE_TRACK_ID="${REACT_APP_GOOGLE_TRACK_ID}" >> .env
+                      - echo $VERSION
+                      - docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PASSWORD registry.quackup.io
+                      - docker build -t "registry.quackup.io/$BITBUCKET_REPO_SLUG-production:$VERSION" -f Dockerfile .
+                      - git remote -v
+                      - git push origin --tags
+                      - docker push "registry.quackup.io/$BITBUCKET_REPO_SLUG-production:$VERSION"
+        stage:
+            - step:
+                  deployment: Staging
+                  size: 2x
+                  name: Build and push
+                  services:
+                      - docker
+                  caches:
+                      - docker
+                      - node
+                  script:
+                      - apt-get update
+                      - apt-get install -y jq
+                      - declare -x VERSION=$(jq -r '.version' package.json)
+                      - echo REACT_APP_BASE_URL="${REACT_APP_BASE_URL}" >> .env
+                      - echo REACT_APP_ENV="${REACT_APP_ENV}" >> .env
+                      - echo REACT_APP_GOOGLE_TRACK_ID="${REACT_APP_GOOGLE_TRACK_ID}" >> .env
+                      - echo $VERSION
+                      - docker login -u $DOCKER_HUB_USER -p $DOCKER_HUB_PASSWORD registry.quackup.io
+                      - docker build -t "registry.quackup.io/$BITBUCKET_REPO_SLUG-stage:$VERSION" -f Dockerfile .
+                      - git tag $VERSION
+                      - git remote -v
+                      - git push origin --tags
+                      - docker push "registry.quackup.io/$BITBUCKET_REPO_SLUG-stage:$VERSION"            
+
+definitions:
+    services:
+        docker:
+            memory: 6144

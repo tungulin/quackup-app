@@ -1,0 +1,30 @@
+.slotDuck {
+  height: 120px;
+  border-radius: 10px;
+  border: 1px dashed #fff;
+}
+
+.imgStyles {
+  max-width: 87px;
+  max-height: 93px;
+  pointer-events: none;
+}
+
+.slotLevel {
+  position: absolute;
+  right: 6px;
+  top: -7px;
+  font-size: 12px;
+  width: 6vh;
+  max-width: 35px;
+  max-height: 35px;
+  color: #fff;
+  height: 635px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: url('ui/icons/rating.svg') no-repeat center center;
+  background-size: cover;
+  overscroll-behavior: none;
+  z-index: 6;
+}

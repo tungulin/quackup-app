@@ -1,0 +1,1 @@
+export { CoinShop } from './ui/CoinShop';

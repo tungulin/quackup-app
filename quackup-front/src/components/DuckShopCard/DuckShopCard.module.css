@@ -1,0 +1,164 @@
+.itemDuckCardWrap {
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 7px 6px;
+  display: flex;
+  justify-content: space-between;
+  transition: all 0.3s;
+}
+
+.itemBorderBlock {
+  border: 2px solid #b3b3b3;
+}
+.itemDuckBlock {
+  opacity: 0.4;
+}
+
+.itemDuckCardWrapLeft {
+  display: flex;
+}
+
+.imgStyle {
+  height: 68px;
+  width: 68px;
+}
+
+.imgStyleBlock {
+  opacity: 0.4;
+}
+
+.blockRating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ratingStyle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+}
+
+.right {
+  padding-right: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+
+.farmSecStyle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+  position: relative;
+  min-height: 24px;
+}
+
+.farmInfo::before {
+  content: '';
+  background-color: #fff;
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  left: 1px;
+  bottom: 1px;
+  border-radius: 10px;
+}
+
+.farmInfo {
+  color: #303e11;
+  align-self: end;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 4px 10px 4px 25px;
+  min-height: 24px;
+  font-size: 11px;
+  min-width: 74px;
+  line-height: 1;
+  border-radius: 12px;
+  position: relative;
+  text-align: right;
+  box-shadow: inset 4px 6px 8px 0 rgba(255, 255, 255, 0.12), inset 0 -4px 4px 0 rgba(0, 0, 0, 0.11),
+    inset 0 -4px 22px 0 rgba(255, 255, 255, 0.25);
+  background: linear-gradient(178.95deg, #eafe7b -19.918%, #ed5d3f 113.537%);
+}
+
+.farmDuck {
+  position: absolute;
+  right: 28px;
+}
+
+.monetaDuck {
+  position: absolute;
+  top: 3px;
+  right: 4px;
+}
+
+.sumDuck {
+  font-size: 14px;
+  background: #f8aa43;
+  min-height: 25px;
+  min-width: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 55px;
+  padding-right: 10px;
+}
+
+.balanceInfo {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 5px;
+}
+
+.balanceInfoLock {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px; 
+}
+
+.monetaSumDuck {
+  position: absolute;
+  top: -5px;
+  left: -3px;
+}
+
+.sumDuckLockTime {
+  font-size: 14px;
+  background: #605858;
+  min-height: 25px;
+  min-width: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 55px;
+}
+
+.donatDuck {
+  top: -9px;
+}
+
+.lockStyles {
+  box-sizing: border-box;
+  position: absolute;
+  width: 93px;
+  height: 25px;
+  right: 0;
+  background: rgba(134, 134, 134, 0.9);
+  box-shadow: inset 0 -4px 22px rgba(255, 255, 255, 0.25), inset 0 -4px 4px rgba(0, 0, 0, 0.11),
+    inset 4px 6px 8px rgba(255, 255, 255, 0.12);
+  border-radius: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

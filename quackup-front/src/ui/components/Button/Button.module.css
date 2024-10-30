@@ -1,0 +1,14 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: linear-gradient(123.45deg, #f9b021 15.9%, #ed5d3f 82.68%);
+  color: #ffffff;
+  box-shadow: 0 -4px 22px 0 #ffffff40 inset;
+  border-radius: 20px;
+}
+
+.xl {
+  height: 55px;
+}

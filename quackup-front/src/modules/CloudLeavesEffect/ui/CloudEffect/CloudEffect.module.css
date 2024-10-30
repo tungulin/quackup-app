@@ -1,0 +1,240 @@
+@-webkit-keyframes moveImage {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes moveImage {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes moveImage2 {
+    from {
+        left: -17%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes moveImage2 {
+    from {
+        left: -17%;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@-webkit-keyframes moveImageOpacity {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+        opacity: 0.6;
+    }
+}
+
+@keyframes moveImageOpacity {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 100%;
+        opacity: 0.6;
+    }
+}
+
+.app__elements {
+    position: absolute;
+    top: 0;
+    min-height: 31.25vh;
+    height: 30%;
+    left: 0;
+    right: -3.125rem;
+}
+
+.app__elements .cloud {
+    position: absolute;
+    width: 100%;
+}
+
+.app__elements .cloud img {
+    transition: all 0.3s;
+    position: absolute;
+}
+
+.app__elements .cloud.cloud1 img {
+    top: 10%;
+    -webkit-animation: moveImage2 80s cubic-bezier(0, 0.44, 0.65, 1.09) infinite;
+    animation: moveImage2 80s cubic-bezier(0, 0.44, 0.65, 1.09) infinite;
+}
+
+.app__elements .cloud.cloud2 img {
+    top: -17%;
+    -webkit-animation: moveImage 130s cubic-bezier(0, 0.44, 0.65, 1.09) infinite;
+    animation: moveImage 130s cubic-bezier(0, 0.44, 0.65, 1.09) infinite;
+}
+
+.app__elements .cloud.cloud3 img,
+.app__elements .cloud.cloud4 img,
+.app__elements .cloud.cloud5 img,
+.app__elements .cloud.cloud6 img {
+    left: -100%;
+    -webkit-animation: moveImageOpacity 60s cubic-bezier(0, 0.44, 0.65, 1.09) infinite;
+    animation: moveImageOpacity 60s cubic-bezier(0, 0.44, 0.65, 1.09) infinite;
+}
+
+.app__elements .cloud.cloud3 img {
+    top: 30%;
+}
+
+.app__elements .cloud.cloud4 img {
+    top: 25%;
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+}
+
+.app__elements .cloud.cloud5 img {
+    top: 15%;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+.app__elements .cloud.cloud6 img {
+    top: 8%;
+    max-width: 50%;
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+}
+
+@-webkit-keyframes moveAlongPath {
+    0% {
+        offset-distance: 0;
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        offset-distance: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes moveAlongPath {
+    0% {
+        offset-distance: 0;
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        offset-distance: 100%;
+        opacity: 0;
+    }
+}
+
+.app__ui {
+    position: absolute;
+    top: 10%;
+    height: 100%;
+    left: 0;
+    right: -3.125rem
+}
+
+.list {
+    position: absolute;
+    left: 0;
+    right: 0
+}
+
+.ball1 {
+    offset-path: path("M.5 74C137 360 151.5 -187.5 500.5 74");
+    -webkit-animation: moveAlongPath 5s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 5s cubic-bezier(0, .44, .65, 1.09) infinite
+}
+
+.ball2 {
+    offset-path: path("M.5 .5C124.95 9.43353 200 574.5 369.5 251C539 -72.5001 694.696 150.278 811.5 251C928.304 351.722 1188.03 155.185 1312.5 36.5");
+    -webkit-animation: moveAlongPath 20s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 20s cubic-bezier(0, .44, .65, 1.09) infinite
+}
+
+.ball3 {
+    offset-path: path("M.500244 96.0008C550.665 -172.553 139.5 199.5 109.5 308.501C79.5006 417.502 392 308.501 501 333.001C610 357.501 715.266 537.428 796.5 499.001C890.667 454.456 1155.93 304.007 1124 158.001");
+    -webkit-animation: moveAlongPath 20s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 20s cubic-bezier(0, .44, .65, 1.09) infinite
+}
+
+.ball4 {
+    offset-path: path("M51.56950759887695,209.86546325683594C86.86995435078938,217.95515146891276,107.66516817728679,232.59790364583333,180.7174835205078,239.46188354492188C253.76979886372885,246.32586344401042,262.69655344645184,251.89238291422527,318.8340759277344,234.9775848388672C374.9715984090169,218.0627867635091,379.97010925292966,224.64574211120606,386.0986633300781,177.57847595214844C392.2272174072266,130.5112097930908,370.67265645345054,93.17787790934244,341.255615234375,62.780269622802734C311.83857401529946,32.38266133626303,297.3512823486328,40.13751828511556,278.475341796875,66.36771392822266C259.5994012451172,92.59790957132975,229.54259012858074,115.35426610310873,272.1972961425781,158.74440002441406C314.8520021565755,202.1345339457194,350.9357147216797,210.40358571370442,434.5291442871094,225.1121063232422C518.1225738525391,239.82062693277996,511.5934283447266,226.03886891682941,578.0269165039062,212.55606079101562C644.4604046630859,199.07325266520184,630.5112219238281,203.2406666056315,677.5784912109375,175.78475952148438C724.6457604980469,148.32885243733725,730.3677376302084,129.51270497639973,750.2242431640625,112.10762023925781");
+    -webkit-animation: moveAlongPath 40s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 40s cubic-bezier(0, .44, .65, 1.09) infinite
+}
+
+.ball5 {
+    offset-path: path("M.5 74C137 360 151.5 -187.5 500.5 74");
+    -webkit-animation: moveAlongPath 15s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 15s cubic-bezier(0, .44, .65, 1.09) infinite
+}
+
+.ball6 {
+    offset-path: path("M.5 .5C124.95 9.43353 200 574.5 369.5 251C539 -72.5001 694.696 150.278 811.5 251C928.304 351.722 1188.03 155.185 1312.5 36.5");
+    -webkit-animation: moveAlongPath 28s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 28s cubic-bezier(0, .44, .65, 1.09) infinite
+}
+
+.ball7 {
+    offset-path: path("M.500244 96.0008C550.665 -172.553 139.5 199.5 109.5 308.501C79.5006 417.502 392 308.501 501 333.001C610 357.501 715.266 537.428 796.5 499.001C890.667 454.456 1155.93 304.007 1124 158.001");
+    -webkit-animation: moveAlongPath 28s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 28s cubic-bezier(0, .44, .65, 1.09) infinite
+}
+
+.ball8 {
+    offset-path: path("M.5 74C137 360 151.5 -187.5 500.5 74");
+    -webkit-animation: moveAlongPath 25s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 25s cubic-bezier(0, .44, .65, 1.09) infinite
+}
+
+.ball9 {
+    offset-path: path("M.5 .5C124.95 9.43353 200 574.5 369.5 251C539 -72.5001 694.696 150.278 811.5 251C928.304 351.722 1188.03 155.185 1312.5 36.5");
+    -webkit-animation: moveAlongPath 20s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 20s cubic-bezier(0, .44, .65, 1.09) infinite
+}
+
+.ball10 {
+    offset-path: path("M.500244 96.0008C550.665 -172.553 139.5 199.5 109.5 308.501C79.5006 417.502 392 308.501 501 333.001C610 357.501 715.266 537.428 796.5 499.001C890.667 454.456 1155.93 304.007 1124 158.001");
+    -webkit-animation: moveAlongPath 36s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 36s cubic-bezier(0, .44, .65, 1.09) infinite
+}
+
+.ball11 {
+    offset-path: path("M4154.5 97.5009C1932 1003 2112 -359.999 .5 97.5009");
+    -webkit-animation: moveAlongPath 16s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 16s cubic-bezier(0, .44, .65, 1.09) infinite
+}
+
+.ball12 {
+    offset-path: path("M4154.5 97.5009C1932 1003 2112 -359.999 .5 97.5009");
+    -webkit-animation: moveAlongPath 12s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 12s cubic-bezier(0, .44, .65, 1.09) infinite;
+    top: 10%
+}
+
+.ball13 {
+    offset-path: path("M4154.5 97.5009C1932 1003 2112 -359.999 .5 97.5009");
+    top: 12%;
+    -webkit-animation: moveAlongPath 20s cubic-bezier(0, .44, .65, 1.09) infinite;
+    animation: moveAlongPath 20s cubic-bezier(0, .44, .65, 1.09) infinite
+}

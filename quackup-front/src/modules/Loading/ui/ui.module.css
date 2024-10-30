@@ -1,0 +1,42 @@
+.loading {
+  height: 100vh;
+  background: url('ui/webp/loading-back.webp') no-repeat center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingCenter {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingCenterImg {
+  width: 300px;
+  margin-bottom: 20px;
+}
+
+.tgVersion {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 30px;
+}
+
+.button {
+  background-color: #f8aa43;
+  position: absolute;
+  bottom: -20px;
+  padding: 10px 20px;
+  width: 100px;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.button:hover {
+  background-color: #eca13e;
+}

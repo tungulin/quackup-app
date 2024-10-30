@@ -1,0 +1,40 @@
+
+.item__main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 19%;
+    text-decoration: none;
+}
+
+.item__main__wrap {
+    z-index: 10000;
+}
+
+.item__main__icon {
+    position: absolute;
+    display: flex;
+    top: -50px;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.item__main__name {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #303e11;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.imgStyle {
+    width: 77px;
+    height: 75px;
+}

@@ -1,0 +1,19 @@
+.wrap {
+    box-sizing: border-box;
+    border-radius: 22px;
+    box-shadow: inset 4px 6px 8px 0 rgba(255, 255, 255, .12), inset 0 -4px 4px 0 rgba(0, 0, 0, .11);
+    -webkit-backdrop-filter: blur(22px);
+    backdrop-filter: blur(22px);
+    background: linear-gradient(178.95deg, rgba(191, 227, 105, .9) -35.283%, rgba(115, 138, 59, .9) 126.771%);
+    opacity: .95;
+    height: calc(100vh - 180px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px 8px 15px 8px;
+}
+
+.body {
+    height: 100%;
+}

@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Freeman:regular);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Freeman;
+  user-select: none;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+body {
+  overflow: hidden;
+  touch-action: none;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+}
+
+#root {
+  position: relative;
+  background: url('ui/img/main-back.png') no-repeat center center;
+  background-size: cover;
+  min-height: 100vh;
+  overscroll-behavior: none;
+}

@@ -1,0 +1,25 @@
+.mainDuck {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.duckIcon {
+    width: 210px;
+    height: 210px;
+    transition: transform 0.08s;
+}
+
+.duckIcon:active {
+    transform: scale(0.9);
+}
+
+.count {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: black;
+}

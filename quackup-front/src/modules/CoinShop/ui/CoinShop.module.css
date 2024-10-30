@@ -1,0 +1,10 @@
+.coinShop {
+  height: calc(100% - 60px);
+  border-radius: 10px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  padding: 0 11px;
+}

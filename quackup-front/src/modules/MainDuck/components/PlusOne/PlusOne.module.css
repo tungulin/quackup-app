@@ -1,0 +1,24 @@
+.plusOne {
+    position: absolute;
+    animation: fadeOutUp 1s forwards;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    pointer-events: none;
+}
+
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+}

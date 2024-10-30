@@ -1,0 +1,75 @@
+.wrap {
+    padding: 2px 4px;
+    border: 2px solid #ffffff;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+    position: relative;
+
+    .name {
+        font-size: 12px;
+        color: #ffffff;
+        background: url('ui/webp/shop-item-header-brown.webp') no-repeat;
+        background-size: 99% 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3px;
+        margin-bottom: 2px;
+        padding-bottom: 5px;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .price {
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 2px;
+        color: #303E11;
+        z-index: 1;
+    }
+
+    .imgStyle {
+        height: 100px;
+        width: 100px;
+        max-height: 100px;
+        max-width: 100px;
+        margin-top: -5px;
+    }
+
+    .buyButton {
+        color: #ffffff;
+        position: absolute;
+        bottom: -26px;
+        background: url('ui/webp/shop-item-footer-brown.webp');
+        background-size: 99% 23px;
+        background-repeat: no-repeat;
+        width: 94%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .comingSoonStylesBlock {
+        position: absolute;
+        bottom: -50px;
+        font-size: 14px;
+        color: #ffffff;
+        background: url('ui/webp/coming-soon.webp') no-repeat;
+        background-size: 99% 80px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        margin-bottom: 2px;
+        padding-bottom: 10px;
+        width: 190px;
+    }
+}
+

@@ -1,0 +1,17 @@
+.iconHeader {
+  font-size: 20px;
+  padding-top: 8px;
+  font-weight: 400;
+  height: 50px;
+  background: url('ui/webp/page-content-header.webp') 0 0/100% 100% no-repeat;
+}
+
+.claimStyle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  padding-top: 2px;
+  margin-top: 10px;
+  font-size: 20px;
+}
