@@ -2,7 +2,6 @@
 
 <br />
 <div align="center">
-   <img src="./images/logo.png" alt="Logo"></img>
    <h2 align="center">QuackUp - P2E Telegram Mini-App</h2>
 </div>
 
